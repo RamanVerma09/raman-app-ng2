@@ -1,0 +1,19 @@
+.main{
+ display: inline-flex;
+}
+.detail{
+    margin-left:20px;
+}
+.img-align{
+        display: inline-grid;
+    text-align: -webkit-center;
+    margin:5px;
+    text-decoration: none;
+
+}
+.img-align > img{
+    border-radius: 50%;
+}
+.cast{
+    display: flex;
+}

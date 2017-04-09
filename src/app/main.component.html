@@ -1,0 +1,21 @@
+
+<div [class.dark-theme]="isDarkTheme">
+  <md-toolbar color="primary">
+    <button md-icon-button [md-menu-trigger-for]="menu">
+      <md-icon>more_vert</md-icon>
+    </button>
+    
+   <a md-button [routerLink]="['movie']">Movie</a>
+   <a md-button [routerLink]="['search']">Search</a>
+   <a md-button [routerLink]="['signup']">Sign Up</a>
+   <a md-button [routerLink]="['card']">Deck of Cards</a>
+
+  </md-toolbar>
+  <md-menu color="accent" x-position="before" #menu="mdMenu">
+    <button md-menu-item (click)="isDarkTheme = false">Light Theme</button>
+    <button md-menu-item (click)="isDarkTheme = true">Dark Theme</button>
+  </md-menu>
+
+</div>
+
+

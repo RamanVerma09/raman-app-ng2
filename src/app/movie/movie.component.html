@@ -1,0 +1,31 @@
+{{title}}
+
+<div class="main">
+<img [src]="img_url" />
+<div class="detail">
+    <h1>{{movieDetail.original_title}} ({{movieDetail.release_date | date: 'yyyy'}})</h1>
+    <div>Overview:</div>
+<div>{{movieDetail.overview}}</div>
+</div>
+
+
+
+</div>
+
+<div class="cast" color="accent">
+<div *ngFor="let item of castDetail">
+    <a class="img-align" target="_blank" href="{{item.castDet}}">
+    
+    <img [src]="item.profile_path" />
+    {{item.name}}
+    <br>
+    {{item.character}}
+    </a>
+</div>
+</div>
+
+<div [class.dark-theme]="isDarkTheme">
+  <md-toolbar color="primary">
+   
+  </md-toolbar>
+</div>

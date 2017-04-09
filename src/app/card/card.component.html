@@ -1,0 +1,12 @@
+{{title}}
+<div>
+    <button md-raised-button>Higher</button>
+       <button md-raised-button>Lower</button>
+          <button md-raised-button>Shuffle</button>
+
+
+</div>
+
+<div *ngFor="let item of cardDrawn">
+    <img [src]="item.image"/>
+</div>
